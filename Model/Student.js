@@ -16,9 +16,6 @@ const studentSchema = new Schema({
         required:true
     },  
     boookedSlots:[{type:mongoose.Schema.Types.ObjectId, ref:"Slot"}],
-    token:{
-        type:String
-    }
 })
 
 module.exports = mongoose.model('Student', studentSchema);
